@@ -1,0 +1,23 @@
+version: '3'
+services: 
+ pg1:
+         image: whoamix/psgql1:lastest
+         ports:
+                 - "50090:5432"
+         networks:
+                 - playground 
+ 
+ pg2:
+         image: whoamix/psgql1:lastest
+         ports: 
+                - "50091:5432"
+         networks:
+                 - playground 
+ pg3:
+         image: whoamix/psgql1:lastest
+         ports:
+                - "50092:5432" 
+         networks:
+                 - playground
+networks:
+        playground: 
