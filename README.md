@@ -37,3 +37,7 @@ If you want do change configuration of database you can run bash shell into cont
 To get container id run:
 
     docker ps
+
+## How to login as root 
+
+    docker exec -u 0 -it mycontainer bash
