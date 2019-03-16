@@ -5,7 +5,10 @@ services:
          ports:
                  - "50090:5432"
          networks:
-                 - playground 
+                 - playground
+         links: 
+          - pg2
+          - pg3
  
  pg2:
          image: whoamix/psgql1:lastest
